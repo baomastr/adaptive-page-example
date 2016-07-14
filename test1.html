@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<title>Test</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+	<link rel="stylesheet" href="test_glyphter-font/css/Glyphter.css">
+	<link rel="stylesheet" href="css/test.min.css">
+</head>
+<body>
+
+<header>
+	<div class="inner">
+		<div class="logo col-md-2">
+			<a href="#"><img src="img_test/logo.png" alt=""></a>
+		</div>
+		<div class="top-right">
+			<a href="" class="login">Log in</a>
+			<form class="navbar-form" role="search">
+				<div class="form-group">
+					<input type="text" class="form-control" placeholder="Search">
+				</div>
+				<button type="submit" class="btn btn-inverse">GO</button>
+			</form>
+		</div>
+		<nav class="col-md-10">
+			<ul class="menu hidden-xs hidden-sm">
+				<li class="menu__item"><a href="">navigate 1</a></li>
+				<li class="menu__item"><a href="">navigate 2</a></li>
+				<li class="menu__item"><a href="">navigate 3</a></li>
+				<li class="menu__item"><a href="">navigate 4</a></li>
+				<li class="menu__item"><a href="">navigate 5</a></li>
+			</ul>
+			<ul class="menu-mobile visible-xs visible-sm">
+				<li class="menu-mobile__item"><a href="">navigate 1</a></li>
+				<li class="menu-mobile__item"><a href="">navigate 2</a></li>
+				<li class="menu-mobile__item"><a href="">navigate 3</a></li>
+				<li class="menu-mobile__item"><a href="">navigate 4</a></li>
+				<li class="menu-mobile__item"><a href="">navigate 5</a></li>
+			</ul>
+		</nav>
+		<div class="clearfix"></div>
+	</div>
+</header>
+
+<section>
+	<div class="content">
+		<div class="col-xs-12 col-sm-12 col-md-4">
+			<div class="content__item">
+				<p class="contetn__item_text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci at eveniet iure quisquam repellendus sit ullam veritatis vero voluptate voluptates! Amet deleniti excepturi facere fugiat in quasi temporibus tenetur! Reiciendis.</p>
+				<div class="content__item_img"><img class="img-responsive centered" src="img_test/img.png" alt=""></div>
+			</div>
+		</div>
+		<div class="col-xs-12 col-sm-12 col-md-4">
+			<div class="content__item">
+				<p class="contetn__item_text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci at eveniet iure quisquam repellendus sit ullam veritatis vero voluptate voluptates! Amet deleniti excepturi facere fugiat in quasi temporibus tenetur! Reiciendis.</p>
+				<div class="content__item_img"><img class="img-responsive centered" src="img_test/img.png" alt=""></div>
+			</div>
+		</div>
+		<div class="col-xs-12 col-sm-12 col-md-4">
+			<div class="content__item">
+				<p class="contetn__item_text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci at eveniet iure quisquam repellendus sit ullam veritatis vero voluptate voluptates! Amet deleniti excepturi facere fugiat in quasi temporibus tenetur! Reiciendis.</p>
+				<div class="content__item_img"><img class="img-responsive centered" src="img_test/img.png" alt=""></div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<footer>
+	<div class="holder">
+		<div class="footer container">
+			<div class="col-xs-12 col-sm-6 col-md-3 footer__logo"><a href=""><img class="img-responsive" src="img_test/logo.png" alt=""></a></div>
+			<div class="col-xs-12 col-sm-6 col-md-5 footer__social">
+				<ul class="footer__social_list">
+					<li class="footer__social_list-item"><a href="">A</a></li>
+					<li class="footer__social_list-item"><a href="">B</a></li>
+					<li class="footer__social_list-item"><a href="">C</a></li>
+					<li class="footer__social_list-item"><a href="">D</a></li>
+				</ul>
+				<p class="footer__social_text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad adipisci consectetur dolore ex explicabo fugiat harum illo inventore iste laudantium magnam odio officiis quidem repellat suscipit, veritatis vitae voluptate voluptates!</p>
+			</div>
+			<div class="col-xs-12 col-sm-12 col-md-4 footer__text"><h2>Lorem ipsum</h2> <p> dolor sit amet, consectetur adipisicing elit. Consequatur cum, debitis dicta dolorem doloremque, ducimus eligendi facere facilis laboriosam obcaecati odio quasi quia quibusdam, repudiandae sapiente ullam velit? Consectetur, non?</p></div>
+		</div>
+	</div>
+</footer>
+
+<div class="test-questions">
+	<!--1.-->
+	<div class="parent" style="display: inline-block;">
+		<div class="child" style="text-align: center;"></div>
+		<div class="anotherChild" style="display: block; margin: 0 auto;"></div>
+		<div class="vertical-aligned-child" style="vertical-align: middle"></div>
+	</div>
+	<!--так же центрирование возможно с помощью построения таблицы-->
+
+	<!--2.-->
+	<script>
+		var a = 10;
+		console.log(a);
+		console.log(typeof a); //проверка типа
+
+		//	при помощи Number можно преобразовать значение в числовой тип
+		console.log(typeof Number('555')); //проверка типа
+		console.log(typeof Number(555)); //проверка типа
+
+		//	при помощи + перед значением можно преобразовать его в числовой тип
+		var b = (+'10');
+		console.log(b);
+		console.log(typeof b); //проверка типа
+
+		//	оператор умножения автоматически преобрзовывает выражение в числовое
+	</script>
+</div>
+
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+
+</body>
+</html>

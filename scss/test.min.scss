@@ -1,0 +1,204 @@
+@import "reset.css";
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #FF8A17;
+  font-family: sans-serif;
+  min-width : 320px;
+  min-height: 100vh;
+  position: relative;
+}
+
+header, section, .holder {
+  padding: 20px;
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+header {
+  padding: 35px;
+  .inner{
+    padding: 20px;
+    background-color: #fff;
+    position: relative;
+  }
+}
+
+.logo{
+  a{
+    img{
+      max-width: 50px;
+    }
+  }
+}
+
+nav{
+  padding-top: 50px;
+  .menu{
+    vertical-align: bottom;
+    &__item{
+      display: inline-block;
+      & > a {
+        text-decoration: none;
+        text-transform: uppercase;
+        color: black;
+        padding: 10px;
+      }
+    }
+    &-mobile{
+      text-align: center;
+      width: 100%;
+      &__item{
+        display: block;
+        width: 100%;
+        padding: 20px 0;
+        & > a {
+          text-decoration: none;
+          text-transform: uppercase;
+          color: black;
+          padding: 10px;
+        }
+      }
+    }
+  }
+}
+
+
+.top-right{
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  z-index: 1;
+  a, form {
+    display: inline-block;
+    color: #000;
+  }
+  .btn{
+    background-color: #000;
+    color: #fff;
+  }
+}
+
+section {
+  display: flex;
+  .content{
+    &__item{
+      padding: 20px;
+      background-color: #fff;
+      &_img{
+        margin-top: 20px;
+        & > img{
+          margin: 0 auto;
+        }
+      }
+    }
+  }
+}
+
+footer {
+  margin-top: 20px;
+  width: 100%;
+  background-color: #fff;
+}
+
+.footer{
+  &__logo{
+
+    a{
+      max-width: 150px;
+    }
+  }
+  &__social{
+
+    &_list{
+      padding: 10px 0;
+      text-align: center;
+      font-family: 'Glyphter';
+      font-size: 60px;
+      &-item{
+        display: inline-block;
+      }
+    }
+    &_text{
+      text-align: center;
+    }
+  }
+  &__text{
+    text-align: right;
+    h2{
+      font-size: 25px;
+      font-weight: bold;
+      padding: 10px 0;
+    }
+  }
+}
+
+.holder{
+  margin-bottom: 0;
+}
+
+.test-questions {
+  display: none;
+}
+@media only screen and (min-width : 992px){
+  footer{
+    position: absolute;
+    bottom: 0;
+  }
+}
+//tablet
+@media only screen and (max-width : 768px) {
+  nav, .logo {
+    display: block;
+    width: 100%;
+  }
+
+  .logo{
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .top-right{
+    position: initial;
+    display: block;
+    width: 100%;
+    text-align: center;
+    .login{
+      display: block;
+    }
+    .navbar-form{
+      .form-group{}
+      .btn{}
+    }
+  }
+  .footer__text{
+    margin: 20px 0;
+  }
+  .footer__logo{
+    width: 100%;
+    text-align: center;
+    a{
+      display: inline-block;
+    }
+  }
+  .footer__text{
+    text-align: center;
+  }
+}
+
+//mobile
+@media only screen and (min-width : 320px) and (max-width : 480px){
+  header, section, .holder{
+    padding: 0;
+    margin-bottom: 20px;
+  }
+  footer {
+    text-align: center;
+    * {
+      display: inline-block;
+    }
+  }
+}
